@@ -1,7 +1,6 @@
 # Qooxdoo Compiler and Command Line Interface
 [![NPM Version][npm-image]][npm-url] 
 [![Gitter][gitter-image]][gitter-url]
-[![Travis Status][travis-image]][travis-url]
 
 Qooxdoo-Compiler is the new compiler and command line interface for Qooxdoo 
 (http://qooxdoo.org) applications, written in 100% Node.JS Javascript it adds 
