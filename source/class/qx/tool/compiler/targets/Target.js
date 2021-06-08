@@ -773,6 +773,7 @@ qx.Class.define("qx.tool.compiler.targets.Target", {
 
       let pathToTarget = path.relative(path.join(t.getOutputDir(), t.getProjectDir(application)), t.getOutputDir()) + "/";
       let TEMPLATE_VARS = {
+        "compileTime": Date.now(),
         "resourcePath": pathToTarget + "resource/",
         "targetPath": pathToTarget,
         "appPath": "",
@@ -843,6 +844,7 @@ qx.Class.define("qx.tool.compiler.targets.Target", {
       if (application.getWriteIndexHtmlToRoot()) {
         pathToTarget = "";
         TEMPLATE_VARS = {
+          "compileTime": Date.now(),
           "resourcePath": "resource/",
           "targetPath": "",
           "appPath": t.getProjectDir(application) + "/",

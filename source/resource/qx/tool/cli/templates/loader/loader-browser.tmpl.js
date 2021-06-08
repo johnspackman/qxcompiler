@@ -123,9 +123,10 @@ qx.$$loader = {
       } else {
         euri = qx.$$appRoot + compressedUris[i];
       }
-      if (qx.$$loader.addNoCacheParam) {
-        euri += "?nocache=" + Math.random();
-      }
+//      if (qx.$$loader.addNoCacheParam) {
+//        euri += "?nocache=" + Math.random();
+//      }
+      euri += "?nocache=" + GLOBALCOMPILETIME;
       %{DecodeUrisPlug}
       uris.push(euri);
     }
